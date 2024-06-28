@@ -6,7 +6,7 @@
 ## Introdução
 
 Sistema teste de suporte para a área corporativa de Tecnologia de Informação.
-Apresentação do framework de desenvolvimento web Flask escrito Python para a disciplina de Programação IV.
+Apresentação do framework de desenvolvimento web Flask escrito em Python para a disciplina de Programação IV.
 
 TODO:
 
@@ -16,9 +16,17 @@ TODO:
 
 ## Para rodar a aplicação
 
-[Escrever sobre a criação do ambiente de desenvolvimento].
+É recomendado executar a aplicação por meio de um ambiente virtual em Python, a fim de haver uma instância
+do interpretador de Python com apenas os pacotes que serão necessários para a execução.
 
-Comando abaixo para rodar o servidor backend da aplicação (nome do arquivo de arranque deve ser `app.py` ou `wsgi.py`).
+```sh
+pip install -r requirements.txt
+```
+
+Com o ambiente virtual Python propriamente instalado e ativado, é necessário instalar (via pip) os pacotes que
+serão usados pela aplicação.
+
+Comando abaixo para rodar o servidor backend da aplicação.
 
 ```sh
 flask run --debug

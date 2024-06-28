@@ -1,8 +1,6 @@
 from flask import Flask
 from flask import request
 
-request.host
-
 app = Flask(__name__)
 
 @app.route("/")
@@ -32,4 +30,8 @@ def hello_world() -> None:
 @app.errorhandler(404)
 def page_not_found(err):
     print(err)
-    return f"<p style='font-family:sans-serif'>Página não encontrada. <a href=''>Home</a>.</p>"
+    return f"""
+        <p style='font-family:sans-serif'>
+            Página não encontrada. <a href='http://{request.host}'>Home</a>.
+        </p>
+    """
