@@ -18,17 +18,17 @@ export default function Home() {
         </div>
 
         <div className='pl-4 flex-col justify-center items-center'>
-            <div className='border-2 border-[#241f34] rounded-md p-2 my-4 cursor-pointer select-none hover:bg-white'>
+            <div className='border border-[#241f34] rounded-md p-2 my-4 cursor-pointer select-none hover:bg-white'>
                 <p className='font-bold'>Abrir OS</p>
                 <span>Abrir um novo chamado.</span>
             </div>
 
-            <div className='border-2 border-[#241f34] rounded-md p-2 my-4 cursor-pointer select-none hover:bg-white'>
+            <div className='border border-[#241f34] rounded-md p-2 my-4 cursor-pointer select-none hover:bg-white'>
                 <p className='font-bold'>Abrir OS</p>
                 <span>OSs abertas e em andamento.</span>
             </div>
 
-            <div className='border-2 border-[#241f34] rounded-md p-2 my-4 cursor-pointer select-none hover:bg-white'>
+            <div className='border border-[#241f34] rounded-md p-2 my-4 cursor-pointer select-none hover:bg-white'>
                 <p className='font-bold'>Dashboard OS</p>
                 <span>Painel de controle de OSs.</span>
             </div>
