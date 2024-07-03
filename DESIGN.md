@@ -9,3 +9,5 @@ table: roles, col: id, role;
 table: users, col: uuid, name, email, password, role;
 
 table: priority
+
+sudo apt-get install python3-dev default-libmysqlclient-dev build-essential
