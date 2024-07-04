@@ -24,7 +24,7 @@ export default function Home() {
             </div>
 
             <div className='border-2 border-[#241f34] rounded-md p-2 my-4 cursor-pointer select-none hover:bg-white'>
-                <p className='font-bold'>Abrir OS</p>
+                <p className='font-bold'>Consultar OS</p>
                 <span>OSs abertas e em andamento.</span>
             </div>
 
