@@ -8,11 +8,6 @@
 Sistema teste de suporte para a área corporativa de Tecnologia de Informação.
 Apresentação do framework de desenvolvimento web Flask escrito em Python para a disciplina de Programação IV.
 
-TODO:
-
-- [ ] Preparação do ambiente de desenvolvimento com um ambiente virtual rodando Python 3.10+;
-- [ ] Estrutura da Base de dados;
-- [ ] Base do servidor de cliente com Vite+ReactTS;
 
 ## Para rodar a aplicação
 

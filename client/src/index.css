@@ -25,8 +25,8 @@
     width: 100%;
     height: 100%;
     z-index: -1;
-    background: rgb(255,218,198);
-    background: linear-gradient(90deg, rgba(255,218,198,1) 0%, rgba(204,179,255,1) 100%);
+    background: rgb(224, 209, 200);
+    /* background: linear-gradient(90deg, rgba(255,218,198,1) 0%, rgba(204,179,255,1) 100%); */
 }
 .logo:hover {
     filter: drop-shadow(0 0 2em #595b9eaa);
