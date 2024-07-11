@@ -1,5 +1,5 @@
 from flask import Flask
-from server.database.generate import start_database
+from server.database.generate import start_database, get_sectors, get_priorities
 
 app = Flask(__name__)
 
@@ -15,7 +15,14 @@ def hello():
     return "<h1>Hello from ypostirixi server!<h1>"
 
 
-@app.post("/")
+@app.get("/sectors")
+def sectors():
+    return get_sectors()
+
+
+@app.get("/priorities")
+def priorities():
+    return get_priorities()
 
 
 @app.errorhandler(404)
