@@ -11,6 +11,10 @@ Apresentação do framework de desenvolvimento web Flask escrito em Python para 
 
 ## Para rodar a aplicação
 
+sudo apt-get install python3-dev default-libmysqlclient-dev build-essential
+
+sudo apt install pkg-config
+
 É recomendado executar a aplicação por meio de um ambiente virtual em Python, a fim de haver uma instância
 do interpretador de Python com apenas os pacotes que serão necessários para a execução.
 
