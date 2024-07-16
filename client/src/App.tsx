@@ -1,10 +1,17 @@
-import Home from "./pages/home";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Home from './pages/home'
+import Login from './pages/login'
 
-export default function App() {
+const App: React.FC = () => {
   return (
-    <div>
-        <div id="back-container"></div>
-        <Home />
-    </div>
+    <Router>
+      <div id='back-container'></div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+      </Routes>
+    </Router>
   )
 }
+
+export default App;
