@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 :root {
   font-family: 'Josefin Sans', sans-serif;
   line-height: 1.5;
@@ -16,7 +17,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  transition: 50ms ease-out;
 }
 #back-container {
   position: fixed;
@@ -25,9 +25,65 @@
   width: 100%;
   height: 100%;
   z-index: -1;
-  background: rgb(224, 209, 200);
-  /* background: linear-gradient(90deg, rgba(255,218,198,1) 0%, rgba(204,179,255,1) 100%); */
+  background: #e0d1c8;
+  background: linear-gradient(90deg, rgba(255,218,198,1) 0%, rgba(204,179,255,1) 100%);
 }
 .logo:hover {
   filter: drop-shadow(0 0 2em #595b9eaa);
+}
+.open {
+  background-color: #FF4A4A;
+  color: #FFFFFF;
+}
+.service {
+  background-color: #CD9400;
+  color: #FFFFFF;
+}
+.pendent {
+  background-color: #DDDD00;
+  color: #000000;
+}
+.end {
+  background-color: #7FBB00;
+  color: #FFFFFF;
+}
+
+.lds-ring,
+.lds-ring div {
+  box-sizing: border-box;
+}
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 40px;
+  height: 40px;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  margin: 6px;
+  border: 6px solid #BC6CB5;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #BC6CB5 transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
