@@ -4,10 +4,37 @@ import GoBack from '../components/go-back'
 import ListRow from '../components/list-row'
 import axios from 'axios'
 import Loading from '../components/loading'
+import { useNavigate } from 'react-router-dom'
 
 import { removeNonNumericCharacters, OS } from '../utils'
+import LoggedBox from '../components/logged-box'
 
-export default function List() {
+export default function DashboardList() {
+  const navigate = useNavigate()
+  const [email, setEmail] = useState('');
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const token = localStorage.getItem('token');
+        if (!token) {
+          navigate('/login');
+          return;
+        }
+        const response = await axios.get(process.env.API+'protected', {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        });
+        setEmail(response.data.logged_in_as.email);
+      } catch (error) {
+        localStorage.removeItem('token');
+        navigate('/login');
+      }
+    };
+    fetchData();
+  }, [navigate]);
+
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
@@ -44,9 +71,11 @@ export default function List() {
 
   return (
     <div>
+      <LoggedBox email={email} />
+
       <HeaderLogo />
       <main className='flex flex-col items-center justify-start w-full'>
-        <h2 className='text-2xl font-bold p-4'>Ordens de Serviço</h2>
+        <h2 className='text-2xl font-bold p-4'>Manutenção de Ordens de Serviço</h2>
 
         <div className='bg-[#f7f7f7] p-5 rounded-[20px] min-w-[600px]'>
           <GoBack path={'/'} />

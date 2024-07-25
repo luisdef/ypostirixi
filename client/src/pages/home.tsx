@@ -4,6 +4,9 @@ import { useNavigate } from 'react-router-dom'
 export default function Home() {
   const navigate = useNavigate()
   
+  const handleNew = () => {
+    navigate('/new')
+  }
   const handleListing = () => {
     navigate('/list')
   }
@@ -14,8 +17,8 @@ export default function Home() {
   return (
     <div className='flex justify-center gap-8 items-center h-screen max-md:flex-col'>
         <Slogan />
-        <div className='pl-4 flex-col justify-center items-center'>
-            <div id='button' className='border-[3px] border-[#241f34] rounded-md p-4 my-4 cursor-pointer select-none hover:bg-slate-200'>
+        <div className='pl-4 flex-col w-[400px] justify-center items-center'>
+            <div onClick={handleNew} id='button' className='border-[3px] border-[#241f34] rounded-md p-4 my-4 cursor-pointer select-none hover:bg-slate-200'>
                 <p className='text-2xl font-bold'>Abrir chamado</p>
                 <span className='text-xl'>Abrir um novo chamado.</span>
             </div>
