@@ -1,6 +1,7 @@
 <div align='center'>
     <img width="95" src='client/public/ypostiriki.svg'>
     <h1>ypostirixi</h1>
+    <span><strong>Suporte em TI.</strong></span>
 </div>
 
 ## Introdução
