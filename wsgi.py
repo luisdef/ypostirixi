@@ -133,3 +133,7 @@ def protected():
 def page_not_found(err) -> str:
     print(err)
     return "Error 404.", 404
+
+
+if __name__ == '__main__':  
+   app.run()
