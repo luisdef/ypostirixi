@@ -6,6 +6,7 @@ import Consult from './pages/consult'
 import New from './pages/new'
 import DashboardList from './pages/dashboardList'
 import DashboardConsult from './pages/dashboardConsult'
+import Page404 from './pages/page-404'
 
 const App: React.FC = () => {
   return (
@@ -19,6 +20,7 @@ const App: React.FC = () => {
         <Route path='/login' element={<Login />} />
         <Route path='/maintenance/list' element={<DashboardList />} />
         <Route path='/maintenance/os' element={<DashboardConsult />} />
+        <Route path='*' element={<Page404 />} />
       </Routes>
     </Router>
   )
