@@ -15,9 +15,9 @@ export default function Home() {
   }
 
   return (
-    <div className='flex justify-center gap-8 items-center h-screen max-md:flex-col'>
+    <div className='flex justify-center items-center h-screen max-md:flex-col max-md:justify-start'>
         <Slogan />
-        <div className='pl-4 flex-col w-[400px] justify-center items-center'>
+        <div className='pl-2 flex-col w-[400px] max-md:w-[350px] justify-center items-center'>
             <div onClick={handleNew} id='button' className='border-[3px] border-[#241f34] rounded-md p-4 my-4 cursor-pointer select-none hover:bg-slate-200'>
                 <p className='text-2xl font-bold'>Abrir chamado</p>
                 <span className='text-xl'>Abrir um novo chamado.</span>

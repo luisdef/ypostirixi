@@ -3,7 +3,7 @@ import ypostirixiLogo from '/ypostiriki.svg'
 export default function Slogan() {
     return (
       <div className='flex-col justify-center items-center'>
-        <div className='flex justify-center items-center py-8'>
+        <div className='flex justify-center items-center py-8 max-md:py-3'>
             <a href="/">
                 <img src={ypostirixiLogo} className="logo w-[150px]" alt="ypostirixi logo" />
             </a>
@@ -12,7 +12,7 @@ export default function Slogan() {
         <div className="card w-full text-center py-8">
             <p className='text-xl'>
                 Sistema de gerenciamento de Suporte em TI.
-            </p>
+            </p>  
         </div>
       </div>
     )
