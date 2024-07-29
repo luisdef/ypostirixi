@@ -67,12 +67,12 @@ export default function Consult() {
   return (
     <div>
       <HeaderLogo />
-      <main className='flex flex-col items-center justify-start w-full'>
+      <main className='flex flex-col items-center justify-start w-full max-md:items-start max-md:overflow-scroll'>
         <h2 className='text-2xl font-bold p-4'>
           Ordem de serviço n° { loading ? '' : <>{parseInt(removeNonNumericCharacters(uuid).substring(0,4))}</> }
         </h2>
 
-        <div className='bg-[#f7f7f7] p-5 rounded-[20px] w-[800px]'>
+        <div className='bg-[#f7f7f7] p-5 rounded-[20px] w-[800px] max-md:w-full'>
           { loading ? <Loading /> :
 
           <>
@@ -82,21 +82,21 @@ export default function Consult() {
               <div className="w-[22px]"></div>
             </div>
     
-            <div className="flex w-[100%] py-4">
-              <div className="w-[60%]">Nome: <span className='bg-[#e0d1c8] p-2 rounded'>{nome}</span></div>
-              <div className="w-[40%]">Setor: <span className='bg-[#e0d1c8] p-2 rounded'>{setor}</span></div>
+            <div className="flex w-[100%] py-4 max-md:flex-col max-md:gap-4">
+              <div className="w-[60%] max-md:w-full">Nome: <span className='bg-[#e0d1c8] p-2 rounded'>{nome}</span></div>
+              <div className="w-[40%] max-md:w-full">Setor: <span className='bg-[#e0d1c8] p-2 rounded'>{setor}</span></div>
             </div>
     
             <div>Contato:</div>
     
-            <div className="flex w-[100%] py-4">
-              <div className="w-[60%]">E-mail: <span className='bg-[#e0d1c8] p-2 rounded'>{email}</span></div>
-              <div className="w-[40%]">Fone: <span className='bg-[#e0d1c8] p-2 rounded'>{fone}</span></div>
+            <div className="flex w-[100%] py-4 max-md:flex-col max-md:gap-4">
+              <div className="w-[60%] max-md:w-full">E-mail: <span className='bg-[#e0d1c8] p-2 rounded'>{email}</span></div>
+              <div className="w-[40%] max-md:w-full">Fone: <span className='bg-[#e0d1c8] p-2 rounded'>{fone}</span></div>
             </div>
     
-            <div className="flex w-[100%] py-4">
-              <div className="w-[60%]">Problema: <span className='bg-[#e0d1c8] p-2 rounded'>{problema}</span></div>
-              <div className="w-[40%]">Prioridade: <span className='bg-[#e0d1c8] p-2 rounded'>{prioridade}</span></div>
+            <div className="flex w-[100%] py-4 max-md:flex-col max-md:gap-4">
+              <div className="w-[60%] max-md:w-full">Problema: <span className='bg-[#e0d1c8] p-2 rounded'>{problema}</span></div>
+              <div className="w-[40%] max-md:w-full">Prioridade: <span className='bg-[#e0d1c8] p-2 rounded'>{prioridade}</span></div>
             </div>
     
             <div className="flex flex-col w-[100%] py-4">

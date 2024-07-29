@@ -38,12 +38,12 @@ export default function New() {
   }
 
   return (
-    <div className='flex justify-center items-center h-screen max-md:flex-col'>
+    <div className='flex justify-center items-center h-screen max-md:flex-col max-md:justify-start'>
       <Slogan />
       <div className='m-4 w-[400px] flex flex-col gap-2 justify-center items-center border-l-2 border-l-slate-900 p-3'>
         <h2 className='text-[1.7rem] font-bold text-xl'>Abrir novo Chamado</h2>
-        <form onSubmit={handleSubmit} className='w-full min-w-[300px]'>      
-          <label className='w-full' htmlFor='name'>
+        <form onSubmit={handleSubmit} className='w-full min-w-[300px] max-md:mb-12'>      
+          <label className='w-full' htmlFor='name'> 
             <p className='pt-1'>Nome: *</p>
             <input className='w-full p-1 rounded-md border-b-[2px] border-slate-900' maxLength={100} id='name' name='name' type='text'
             onChange={(e) => setNome(e.target.value)}

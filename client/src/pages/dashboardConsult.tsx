@@ -171,7 +171,7 @@ export default function DashboardConsult() {
     <div>
       <LoggedBox email={emailLogged} />
       <HeaderLogo />
-      <main className='flex flex-col items-center justify-start w-full'>
+      <main className='flex flex-col items-center justify-start w-full max-md:items-start max-md:overflow-scroll'>
         <h2 className='text-2xl font-bold p-4'>
           Manutenção OS n° { loading ? '' : <>{parseInt(removeNonNumericCharacters(uuid).substring(0,4))}</> }
         </h2>

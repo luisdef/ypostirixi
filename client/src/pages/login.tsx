@@ -46,7 +46,7 @@ export default function Login() {
   }
 
   return (
-    <div className='flex justify-center items-center h-screen max-md:flex-col'>
+    <div className='flex justify-center items-center h-screen max-md:flex-col max-md:justify-start'>
       <Slogan />
       <div className='m-4 w-[400px] flex flex-col gap-2 justify-center items-center border-l-2 border-l-slate-900 p-6'>
         <h2 className='text-[1.7rem] font-bold text-xl'>Faça login</h2>

@@ -74,7 +74,7 @@ export default function DashboardList() {
       <LoggedBox email={email} />
 
       <HeaderLogo />
-      <main className='flex flex-col items-center justify-start w-full'>
+      <main className='flex flex-col items-center justify-start w-full max-md:items-start max-md:overflow-scroll'>
         <h2 className='text-2xl font-bold p-4'>Manutenção de Ordens de Serviço</h2>
 
         <div className='bg-[#f7f7f7] p-5 rounded-[20px] min-w-[600px]'>
