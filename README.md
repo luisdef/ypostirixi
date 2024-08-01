@@ -9,6 +9,8 @@
 Sistema teste de suporte para a área corporativa de Tecnologia de Informação.
 Apresentação do framework de desenvolvimento web Flask escrito em Python para a disciplina de Programação IV.
 
+[Link](https://www.figma.com/design/kO6cNfBBbe8yq1rRT2ZCd3/ypostirixi) design do Figma.
+
 ## Para rodar a aplicação
 
 ### Parte servidor
