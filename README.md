@@ -44,7 +44,7 @@ flask run -h localhost -p 8080
 
 ### Parte cliente
 
-É necessário haver instalado Node.JS na máquina.
+É necessário ter instalado Node.JS na máquina.
 
 Para rodar a aplicação do cliente, é necessário se deslocar ao diretório `client/` e executar os seguintes comandos:
 
