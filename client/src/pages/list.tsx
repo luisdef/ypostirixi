@@ -48,8 +48,8 @@ export default function List() {
       <main className='flex flex-col items-center justify-start w-full max-md:items-start max-md:overflow-scroll'>
         <h2 className='text-2xl font-bold p-4'>Ordens de Serviço</h2>
 
-        <div className='bg-[#f7f7f7] p-5 rounded-[20px] min-w-[600px]'>
-          <GoBack path={'/'} />
+        <div className='bg-[#f7f7f7] p-5 rounded-[20px] min-w-[600px] max-w-[800px] mb-16'>
+          <GoBack path={'/ypostirixi'} />
 
           <div className='flex w-[100%] pt-4'>
             <div className="font-bold w-[10%] text-[17px] text-center">N°OS</div>

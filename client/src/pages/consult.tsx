@@ -15,12 +15,12 @@ export default function Consult() {
 
   useEffect(() => {
     if (uuidValueQuery?.length !== 36) {
-      navigate('/')
+      navigate('/ypostirixi')
     }
   });
 
   const [data, setData] = useState<IOS>();
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(true); 
 
   const [uuid, setUuid] = useState('');
   const [nome, setNome] = useState('');
@@ -95,18 +95,18 @@ export default function Consult() {
             </div>
     
             <div className="flex w-[100%] py-4 max-md:flex-col max-md:gap-4">
-              <div className="w-[60%] max-md:w-full">Problema: <span className='bg-[#e0d1c8] p-2 rounded'>{problema}</span></div>
+              <div className="w-[60%] max-md:w-full">Problema: <span className='bg-[#e0d1c8] p-2 rounded break-all'>{problema}</span></div>
               <div className="w-[40%] max-md:w-full">Prioridade: <span className='bg-[#e0d1c8] p-2 rounded'>{prioridade}</span></div>
             </div>
     
             <div className="flex flex-col w-[100%] py-4">
               <div className="w-[100%]">Problema:</div>
-              <span className='bg-[#e0d1c8] p-2 rounded'>{descricao}</span>
-            </div>
+              <span className='bg-[#e0d1c8] p-2 rounded break-all'>{descricao}</span>
+            </div>    
     
             <div className="flex flex-col w-[100%] py-4">
               <div className="w-[100%]">Observação técnica:</div>
-              <span className='bg-[#e0d1c8] p-2 rounded'>{descricaoTec}</span>
+              <span className='bg-[#e0d1c8] p-2 rounded break-all'>{descricaoTec}</span>
             </div>
     
             <div className="flex w-[100%] py-4">

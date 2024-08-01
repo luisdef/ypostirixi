@@ -7,13 +7,13 @@ import axios from 'axios'
 export default function Login() {
   const navigate = useNavigate()
   const goBackToHome = () => {
-    navigate('/')
+    navigate('/ypostirixi')
   }
 
   useEffect(() => {
     const token = localStorage.getItem('token');
     if (token) {
-      navigate('/maintenance/list');
+      navigate('/ypostirixi/maintenance/list');
       return;
     }
   }, [navigate]);
@@ -39,7 +39,7 @@ export default function Login() {
         password
       });
       localStorage.setItem('token', response.data.access_token);
-      navigate('/maintenance/list');
+      navigate('/ypostirixi/maintenance/list');
     } catch (error: unknown) {
       alert("Login não efetuado.\nNão autorizado.");
     }

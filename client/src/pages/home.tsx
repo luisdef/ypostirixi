@@ -5,13 +5,13 @@ export default function Home() {
   const navigate = useNavigate()
   
   const handleNew = () => {
-    navigate('/new')
+    navigate('/ypostirixi/new')
   }
   const handleListing = () => {
-    navigate('/list')
+    navigate('/ypostirixi/list')
   }
   const handleDashboardAccess = () => {
-    navigate('/login')
+    navigate('/ypostirixi/login')
   }
 
   return (

@@ -13,9 +13,9 @@ export default function ListRow(props: {
   const handleClick = () => {
     const token = localStorage.getItem('token');
     if (token) {
-      navigate("/maintenance/os?uuid=" + props.uuid);
+      navigate("/ypostirixi/maintenance/os?uuid=" + props.uuid);
     } else {
-      navigate("/os?uuid=" + props.uuid);
+      navigate("/ypostirixi/os?uuid=" + props.uuid);
     }
   }
 

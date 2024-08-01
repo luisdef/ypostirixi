@@ -19,7 +19,7 @@ export default function DashboardConsult() {
       try {
         const token = localStorage.getItem('token');
         if (!token) {
-          navigate('/login');
+          navigate('/ypostirixi/login');
           return;
         }
         const response = await axios.get(process.env.API+'protected', {
@@ -30,7 +30,7 @@ export default function DashboardConsult() {
         setEmailLogged(response.data.logged_in_as.email);
       } catch (error) {
         localStorage.removeItem('token');
-        navigate('/login');
+        navigate('/ypostirixi/login');
       }
     };
     fetchData();
@@ -40,7 +40,7 @@ export default function DashboardConsult() {
 
   useEffect(() => {
     if (uuidValueQuery?.length !== 36) {
-      navigate('/')
+      navigate('/ypostirixi')
     }
   });
 
@@ -118,7 +118,7 @@ export default function DashboardConsult() {
     "Encerrada"
   ]
   const renderedOpts = opts.map((num) =>
-    <option key={num+61} value={num}>{textStatus[num-1]}</option>
+    <option key={num} value={num}>{textStatus[num-1]}</option>
   );
 
   const handleSubmit = async (event: React.FormEvent) => {
@@ -148,7 +148,7 @@ export default function DashboardConsult() {
     } catch (error: unknown) {
       console.error(error);
     }
-    navigate(`/maintenance/os?uuid=${uuid}`);
+    navigate(`/ypostirixi/maintenance/os?uuid=${uuid}`);
   }
 
   const [isDeleteModalOpen, setIsDeleteModalOpen] = useState(false);
@@ -161,7 +161,7 @@ export default function DashboardConsult() {
         }
       })
       console.log(response.statusText);
-      navigate('/maintenance/list');''
+      navigate('/ypostirixi/maintenance/list');
     } catch (error: unknown) {
       console.error(error);
     }
@@ -182,8 +182,8 @@ export default function DashboardConsult() {
           <form onSubmit={handleSubmit}>
             { message ? <p className='w-full rounded-xl text-center mb-2 py-1 bg-lime-400'>{message}</p> : '' }
             <div className="flex justify-between">
-              <GoBack path={'/maintenance/list'} />
-              <select name="status" id="status" defaultValue={2} onChange={(e) => setFormStatus(parseInt(e.target.value))} className='border-2 border-red-200 rounded'>
+              <GoBack path={'/ypostirixi/maintenance/list'} />
+              <select name="status" id="status" onChange={(e) => setFormStatus(parseInt(e.target.value))} className='border-2 border-red-200 rounded'>
                 {renderedOpts}
               </select>
               <div className="w-[22px]"></div>

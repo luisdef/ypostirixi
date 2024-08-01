@@ -3,6 +3,6 @@ import { useNavigate } from 'react-router-dom'
 
 export default function Page404() {
   const navigate = useNavigate()
-  useEffect(() => { navigate('/') })
+  useEffect(() => { navigate('/ypostirixi') })
   return (<></>)
 }

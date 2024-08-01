@@ -4,7 +4,7 @@ export default function Slogan() {
     return (
       <div className='flex-col justify-center items-center'>
         <div className='flex justify-center items-center py-8 max-md:py-3'>
-            <a href="/">
+            <a href="/ypostirixi">
                 <img src={ypostirixiLogo} className="logo w-[150px]" alt="ypostirixi logo" />
             </a>
         </div>

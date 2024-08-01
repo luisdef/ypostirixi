@@ -18,7 +18,7 @@ export default function DashboardList() {
       try {
         const token = localStorage.getItem('token');
         if (!token) {
-          navigate('/login');
+          navigate('/ypostirixi/login');
           return;
         }
         const response = await axios.get(process.env.API+'protected', {
@@ -29,7 +29,7 @@ export default function DashboardList() {
         setEmail(response.data.logged_in_as.email);
       } catch (error) {
         localStorage.removeItem('token');
-        navigate('/login');
+        navigate('/ypostirixi/login');
       }
     };
     fetchData();
@@ -77,8 +77,8 @@ export default function DashboardList() {
       <main className='flex flex-col items-center justify-start w-full max-md:items-start max-md:overflow-scroll'>
         <h2 className='text-2xl font-bold p-4'>Manutenção de Ordens de Serviço</h2>
 
-        <div className='bg-[#f7f7f7] p-5 rounded-[20px] min-w-[600px]'>
-          <GoBack path={'/'} />
+        <div className='bg-[#f7f7f7] p-5 rounded-[20px] min-w-[600px] mb-16'>
+          <GoBack path={'/ypostirixi'} />
 
           <div className='flex w-[100%] pt-4'>
             <div className="font-bold w-[10%] text-[17px] text-center">N°OS</div>

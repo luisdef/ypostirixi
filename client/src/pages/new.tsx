@@ -6,7 +6,7 @@ import axios from 'axios'
 export default function New() {
   const navigate = useNavigate()
   const goBackToHome = () => {
-    navigate('/')
+    navigate('/ypostirixi')
   }
 
   const [nome, setNome] = useState('');
@@ -34,7 +34,7 @@ export default function New() {
     } catch (error: unknown) {
       console.error(error);
     }
-    navigate('/list')
+    navigate('/ypostirixi/list')
   }
 
   return (

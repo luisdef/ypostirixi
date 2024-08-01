@@ -12,7 +12,7 @@ export default function LoggedBox(prop: { email: string }) {
 
   const logout = () => {
     localStorage.removeItem('token');
-    navigate('/');
+    navigate('/ypostirixi');
   }
 
   return (
