@@ -60,6 +60,7 @@ npm run dev # para desenvolvimento
 ## Contribuidores
 
 - Luis Felipe Assmann (luis.assmann.1234@gmail.com);
+    - Henrique Sant’Anna [orientador].
 
 ## Licença
 
