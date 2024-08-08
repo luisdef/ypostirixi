@@ -11,6 +11,8 @@ Apresentação do framework de desenvolvimento web Flask escrito em Python para 
 
 [Link](https://www.figma.com/design/kO6cNfBBbe8yq1rRT2ZCd3/ypostirixi) design do Figma.
 
+[Link](https://www.canva.com/design/DAGMK3IUoUs/rpF5QmN6diXEYIiO7Oo8FQ/edit?utm_content=DAGMK3IUoUs&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton) introdução em slides.
+
 ## Para rodar a aplicação
 
 ### Parte servidor
